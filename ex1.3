@@ -1,0 +1,20 @@
+(define (sumsquares x y z)
+    (if (= x (larger x y))
+        (sumsq x (larger y z))
+        (sumsq y (larger x z))
+        )
+    )
+
+(define (larger x y)
+    (if (> x y)
+        x
+        y)
+    )
+
+(define (sumsq x y)
+    (+ (square x) (square y))
+    )
+
+
+(define (square x)
+    (* x x))
